@@ -1,3 +1,8 @@
-- install_conda_and_others.sh
+# Basic Scripts
 
-With this file, you can install Miniconda, OpenCV, Tensorflow, and Pytorch for Python 3.
+** install_conda_and_others.sh **
+This is for Python 3.
+- Miniconda
+- OpenCV
+- Tensorflow 
+- Pytorch
