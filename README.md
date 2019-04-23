@@ -5,5 +5,5 @@
 This is for Python 3.
 - Miniconda
 - OpenCV
-- Tensorflow 
+- Tensorflow-gpu
 - Pytorch
