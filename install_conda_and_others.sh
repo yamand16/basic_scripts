@@ -12,12 +12,15 @@ conda create -n conda_env python=3
 # Install OpenCV
 conda install -c conda-forge opencv
 
-# Install tensorflow with gpu 
+# Install TensorFlow with gpu 
 conda install -c conda-forge tensorflow-gpu
 
-# For specify the version, use ==version_name
+# For specify the version, use == version_name
 # Example:
 # conda install -c conda-forge tensorflow-gpu==1.7
+
+# In order to install TensorFlow 2.0:
+# pip install tensorflow-gpu==2.0.0-beta1 
 
 # Install Pytorch
 conda install -c pytorch pytorch
