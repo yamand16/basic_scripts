@@ -2,8 +2,8 @@
 
 **install_conda_and_others.sh**
 
-This is for Python 3.
+You can install following applications/frameworks:
 - Miniconda
 - OpenCV
-- Tensorflow-gpu
+- Tensorflow
 - Pytorch
