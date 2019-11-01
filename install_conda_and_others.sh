@@ -24,3 +24,9 @@ conda install -c conda-forge tensorflow-gpu
 
 # Install Pytorch
 conda install -c pytorch pytorch
+
+# Install cudnn if it is necessary
+conda install -c anaconda cudnn
+
+# Install cudnn with specific version if it is necessary
+conda install -c anaconda cudnn=7.0.5
