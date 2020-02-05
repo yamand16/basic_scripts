@@ -12,5 +12,3 @@ conda install -c anaconda scipy
 
 # Install numpy
 conda install -c anaconda numpy
-
-
