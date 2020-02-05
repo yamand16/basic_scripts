@@ -6,7 +6,7 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 # Install it
 sh Miniconda3-latest-Linux-x86_64.sh
 
-# Create conda environment
+# Create conda environment that has python version 3
 conda create -n conda_env python=3
 
 # Install OpenCV
@@ -25,8 +25,15 @@ conda install -c conda-forge tensorflow-gpu
 # Install Pytorch
 conda install -c pytorch pytorch
 
+# When you install tensorflow or pytorch with conda, appropriate cuda and cudnn tools are also installed via conda.
+# However if you install yourself, you can use below command to install it.
+# If you do not specify the version of them, the latest version will be installed.
+
+# Install cuda if it is necessary
+#conda install -c anaconda cudatoolkit
+
 # Install cudnn if it is necessary
-conda install -c anaconda cudnn
+#conda install -c anaconda cudnn
 
 # Install cudnn with specific version if it is necessary
-conda install -c anaconda cudnn=7.0.5
+#conda install -c anaconda cudnn=7.0.5
