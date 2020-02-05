@@ -25,6 +25,9 @@ conda install -c conda-forge tensorflow-gpu
 # Install Pytorch
 conda install -c pytorch pytorch
 
+# Install Torch Vision
+conda install -c pytorch torchvision
+
 # When you install tensorflow or pytorch with conda, appropriate cuda and cudnn tools are also installed via conda.
 # However if you install yourself, you can use below command to install it.
 # If you do not specify the version of them, the latest version will be installed.
