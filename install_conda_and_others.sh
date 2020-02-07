@@ -12,9 +12,6 @@ conda create -n conda_env python=3
 # Activate conda environment that we created 
 conda activate conda_env
 
-# Install OpenCV
-conda install -c conda-forge opencv
-
 # Install TensorFlow with gpu 
 conda install -c conda-forge tensorflow-gpu
 
