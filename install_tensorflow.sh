@@ -7,3 +7,6 @@ conda install -c conda-forge tensorflow-gpu
 
 # In order to install TensorFlow 2.0:
 # pip install tensorflow-gpu==2.0.0-beta1 
+
+# Install TensorFlow 2.0 with Anaconda
+#conda install tensorflow-gpu==2.0
