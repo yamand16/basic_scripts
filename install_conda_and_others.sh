@@ -25,11 +25,16 @@ conda install -c conda-forge tensorflow-gpu
 # In order to install TensorFlow 2.0:
 # pip install tensorflow-gpu==2.0.0-beta1 
 
-# Install Pytorch
-conda install -c pytorch pytorch
+# Install PyTorch
+#conda install -c pytorch pytorch
 
 # Install Torch Vision
-conda install -c pytorch torchvision
+#conda install -c pytorch torchvision
+
+# Alternative way to install PyTorch and Torch Vision with Specific Cuda
+conda install pytorch torchvision cudatoolkit=10.1 -c pytorch
+# You can use below link to get appropriate PyTorch installation command for your system.
+#https://pytorch.org/
 
 # When you install tensorflow or pytorch with conda, appropriate cuda and cudnn tools are also installed via conda.
 # However if you install yourself, you can use below command to install it.
