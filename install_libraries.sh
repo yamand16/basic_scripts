@@ -15,3 +15,6 @@ conda install -c anaconda scipy
 
 # Install numpy
 conda install -c anaconda numpy
+
+# Install Pillow
+conda install -c anaconda pillow
