@@ -2,14 +2,14 @@
 
 **install_conda.sh**
 
-- Miniconda 
+- Install Miniconda 
 - Create a virtual environment
 - Activate it
 
 **install_cuda_and_cudnn.sh**
 
 - Cuda
-- Cudnn. 
+- Cudnn
 
 For the specific versions of them, check the script.
 
