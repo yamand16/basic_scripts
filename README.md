@@ -39,3 +39,4 @@ With this script, you can install several libraries that are important and popul
 - Scikit learn
 - Scipy
 - Numpy
+- Pillow
