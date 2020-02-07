@@ -1,8 +1,8 @@
 # Basic Scripts
 
-- **install_conda.sh**
+**install_conda.sh**
 
-- - Install Miniconda 
+- Install Miniconda 
 - Create a virtual environment
 - Activate it
 
