@@ -2,7 +2,7 @@
 
 - **install_conda.sh**
 
-- Install Miniconda 
+-- Install Miniconda 
 - Create a virtual environment
 - Activate it
 
