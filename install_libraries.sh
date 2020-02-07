@@ -1,3 +1,6 @@
+# Install OpenCV
+conda install -c conda-forge opencv
+
 # Install matplotlib
 conda install -c conda-forge matplotlib
 
