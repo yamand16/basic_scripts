@@ -1,6 +1,9 @@
 # Install TensorFlow with gpu 
 conda install -c conda-forge tensorflow-gpu
 
+# Install Keras
+conda install -c conda-forge keras
+
 # For specify the version, use == version_name
 # Example:
 # conda install -c conda-forge tensorflow-gpu==1.7
