@@ -16,6 +16,7 @@ For the specific versions of them, check the script.
 **install_tensorflow.sh**
 
 - TensorFlow
+- Keras
 
 In order to install specific version of TF, check the inner of the script.
 
