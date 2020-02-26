@@ -11,5 +11,5 @@ conda install -c conda-forge keras
 # In order to install TensorFlow 2.0:
 # pip install tensorflow-gpu==2.0.0-beta1 
 
-# Install TensorFlow 2.0 with Anaconda
+# Install TensorFlow 2.1.0 with Anaconda
 #conda install -c anaconda tensorflow-gpu
