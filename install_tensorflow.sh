@@ -1,4 +1,4 @@
-# Install TensorFlow with gpu 
+# Install TensorFlow with gpu. Without specify version, TensorFlow 2.1.0 is installed.
 conda install -c conda-forge tensorflow-gpu
 
 # Install Keras
