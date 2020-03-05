@@ -18,3 +18,9 @@ conda install -c anaconda numpy
 
 # Install Pillow
 conda install -c anaconda pillow
+
+# Install tqdm
+conda install -c conda-forge tqdm
+
+# Install Yaml
+conda install -c conda-forge oyaml
