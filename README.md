@@ -41,3 +41,5 @@ With this script, you can install several libraries that are important and popul
 - Scipy
 - Numpy
 - Pillow
+- Tqdm
+- Yaml
