@@ -1,6 +1,9 @@
 # Install TensorFlow with gpu. Without specify version, TensorFlow 2.1.0 is installed.
 conda install -c conda-forge tensorflow-gpu
 
+# Install TensorFlow Object Detection API
+conda install -c conda-forge tf_object_detection
+
 # Install Keras
 conda install -c conda-forge keras
 
