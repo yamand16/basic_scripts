@@ -1,6 +1,9 @@
 # Install PyTorch
 conda install -c pytorch pytorch
 
+# Install PyTorch without GPU
+conda install pytorch torchvision cpuonly -c pytorch
+
 # Install Torch Vision
 conda install -c pytorch torchvision
 
