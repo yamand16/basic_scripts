@@ -23,7 +23,7 @@ In order to install specific version of TF, check the inner of the script.
 **install_pytorch.sh**
 
 - PyTorch 
-- Torch Vision 
+- TorchVision 
 
 For the specific versions, check the script.
 
