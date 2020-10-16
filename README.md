@@ -43,3 +43,4 @@ With this script, you can install several libraries that are important and popul
 - Pillow
 - Tqdm
 - Yaml
+- Dlib
