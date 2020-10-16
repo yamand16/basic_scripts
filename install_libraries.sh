@@ -24,3 +24,6 @@ conda install -c conda-forge tqdm
 
 # Install Yaml
 conda install -c conda-forge oyaml
+
+# Install dlib
+conda install -c conda-forge dlib
