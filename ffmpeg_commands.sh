@@ -9,3 +9,8 @@ ffmpeg -ss 00:00:00 -t 00:00:00 -i input.mp4 -vcodec copy -acodec copy output.mp
 # file 'video1.mp4'
 # file 'video2.mp4'
 ffmpeg -f concat -safe 0 -i list.txt -c copy out.mp4
+
+# Convert input video codec to h264
+ffmpeg -i input_video.mp4 -vcodec h264 output_video.mp4
+# Convert input video codec to h264 and audio codec to mp2
+ffmpeg -i input_video.mp4 -vcodec h264 -acodec mp2 output_video.mp4
