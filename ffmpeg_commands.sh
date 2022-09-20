@@ -17,3 +17,6 @@ ffmpeg -f concat -safe 0 -i list.txt -c copy out.mp4
 ffmpeg -i input_video.mp4 -vcodec h264 output_video.mp4
 # Convert input video codec to h264 and audio codec to mp2
 ffmpeg -i input_video.mp4 -vcodec h264 -acodec mp2 output_video.mp4
+
+# Extract audio from the video file
+ffmpeg -i input.mp4 -ar 16000 -ac 1 -c:a pcm_s16le output.wav
