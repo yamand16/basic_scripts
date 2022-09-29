@@ -20,3 +20,6 @@ ffmpeg -i input_video.mp4 -vcodec h264 -acodec mp2 output_video.mp4
 
 # Extract audio from the video file
 ffmpeg -i input.mp4 -ar 16000 -ac 1 -c:a pcm_s16le output.wav
+
+# Slown down the audio
+ffmpeg -i input.wav -filter:a "atempo=0.75" -vn output.wav
