@@ -23,3 +23,9 @@ ffmpeg -i input.mp4 -ar 16000 -ac 1 -c:a pcm_s16le output.wav
 
 # Slown down the audio
 ffmpeg -i input.wav -filter:a "atempo=0.75" -vn output.wav
+
+# Make- audio codec of a video to mono
+ffmpeg -i input.mp4 -ac 1 output.mp4
+
+# Make audio sample rate of a video 16000
+ffmpeg -i input.mp4 -ar 16000 output.mp4
