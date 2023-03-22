@@ -4,8 +4,11 @@ ffmpeg -i video1.mp4 -i video2.mp4 -filter_complex '[0:v]pad=iw*2:ih[int];[int][
 # Concatenate multiple audio files
 ffmpeg -i TTS_gen1.wav -i TTS_gen2.wav -i TTS_gen3.wav -i TTS_gen4.wav -filter_complex '[0:0][1:0][2:0][3:0]concat=n=4:v=0:a=1[out]' -map '[out]' output.wav
 
-# Crop video by providing starting time and length
-ffmpeg -ss 00:00:00 -t 00:00:00 -i input.mp4 -vcodec copy -acodec copy output.mp4
+# Crop video by providing start time and length
+ffmpeg -ss 00:00:03 -t 00:00:10 -i input.mp4 -vcodec copy -acodec copy output.mp4
+
+# Crop video by prodiving start and end time
+ffmpeg -ss 00:00:03 -to 00:00:10 -i input.mp4 -vcodec copy -acodec copy output.mp4
 
 # Merge two videos end-to-end using .txt file
 # list.txt contains videos as below:
