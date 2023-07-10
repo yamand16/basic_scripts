@@ -32,3 +32,6 @@ ffmpeg -i input.mp4 -ac 1 output.mp4
 
 # Make audio sample rate of a video 16000
 ffmpeg -i input.mp4 -ar 16000 output.mp4
+
+# Change FPS of the video
+ffmpeg -i input.mp4 -filter:v fps=30 output.mp4
