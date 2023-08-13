@@ -33,5 +33,8 @@ ffmpeg -i input.mp4 -ac 1 output.mp4
 # Make audio sample rate of a video 16000
 ffmpeg -i input.mp4 -ar 16000 output.mp4
 
+# Decrease the video size by reducing the bitrate
+ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4 # or libx264. Increasing CRF file also increases the compression further. Higher CRF values mean lower bitrate.
+
 # Change FPS of the video
 ffmpeg -i input.mp4 -filter:v fps=30 output.mp4
