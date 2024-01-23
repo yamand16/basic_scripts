@@ -38,3 +38,6 @@ ffmpeg -i input.mp4 -vcodec libx265 -crf 28 output.mp4 # or libx264. Increasing 
 
 # Change FPS of the video
 ffmpeg -i input.mp4 -filter:v fps=30 output.mp4
+
+# Combine an audio and a video
+ffmpeg -y -i input1.wav -i input2.mp4 -strict -2 -q:v 1 output.mp4
