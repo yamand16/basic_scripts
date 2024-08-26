@@ -57,3 +57,6 @@ ffmpeg -y -i input1.wav -i input2.mp4 -strict -2 -q:v 1 output.mp4
 
 # Crop video frame
 ffmpeg -i input.mp4 -vf "crop=crop_w:crop_h:start_w:start_h" -c:a copy out.mp4
+
+# Filter out the audio from a video
+ffmpeg -i input.mp4 -c copy -an output_wo_audio.mp4
