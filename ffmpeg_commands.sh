@@ -60,3 +60,6 @@ ffmpeg -i input.mp4 -vf "crop=crop_w:crop_h:start_w:start_h" -c:a copy out.mp4
 
 # Filter out the audio from a video
 ffmpeg -i input.mp4 -c copy -an output_wo_audio.mp4
+
+# Change video codec and FPS
+ffmpeg -i input.mp4 -r 25 -c:v libx264 -c:a aac output.mp4
