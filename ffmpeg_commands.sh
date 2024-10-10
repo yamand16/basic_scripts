@@ -9,7 +9,8 @@ fmpeg -i video1.mp4 -i video2.mp4 -i -filter_complex "[0:v]drawtext=text='Text 1
 # Follow this format for any number of videos
 # [0:a]-> change index which audio you would like to use
 # [0:a]aformat=channel_layouts=stereo[a] -> [0:a][1:a][2:a]amix=inputs=3[a] use this if you want mix audio
-ffmpeg -i video1.mp4 -i video2.mp4 -i video3.mp4 -filter_complex "[0:v]drawtext=text='Text 1':x=50:y=680:fontsize=26:fontcolor=green[txt1];[1:v]drawtext=text='Text 2':x=50:y=680:fontsize=26:fontcolor=green[txt2];[2:v]drawtext=text='Text 3':x=50:y=680:fontsize=26:fontcolor=green[txt3];[txt1][txt2][txt3]hstack=inputs=3[v];[0:a]aformat=channel_layouts=stereo[a]" -map "[v]" -map "[a]" -r frame_rate output.mp4
+#ffmpeg -i video1.mp4 -i video2.mp4 -i video3.mp4 -filter_complex "[0:v]drawtext=text='Text 1':x=50:y=680:fontsize=26:fontcolor=green[txt1];[1:v]drawtext=text='Text 2':x=50:y=680:fontsize=26:fontcolor=green[txt2];[2:v]drawtext=text='Text 3':x=50:y=680:fontsize=26:fontcolor=green[txt3];[txt1][txt2][txt3]hstack=inputs=3[v];[0:a]aformat=channel_layouts=stereo[a]" -map "[v]" -map "[a]" -r frame_rate output.mp4
+ ffmpeg -i video1.mp4 -i video2.mp4 -i video3.mp4 -i video4.mp4 -filter_complex "xstack=inputs=4:layout=0_0|w0_0|0_h0|w0_h0[v]" -map "[v]" -map 0:a -c:v libx264 -crf 23 -preset veryfast -shortest output.mp4
 
 # Concatenate multiple audio files
 ffmpeg -i TTS_gen1.wav -i TTS_gen2.wav -i TTS_gen3.wav -i TTS_gen4.wav -filter_complex '[0:0][1:0][2:0][3:0]concat=n=4:v=0:a=1[out]' -map '[out]' output.wav
